@@ -1,0 +1,182 @@
+@import "resources/bootstrap/bootstrap-sass/assets/stylesheets/bootstrap";
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+// end of reset sheet
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+
+$bg-color: #200b04;
+
+body
+{
+	background: url("../images/bg.png") no-repeat;
+	background-size: 100%;
+	background-color: $bg-color;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container
+{
+	position: fixed;
+	float: left;
+	background-color: #000;
+	width: 50px;
+	height: 100%;
+}
+
+.hamburger
+{
+	color: #fff;
+	padding-top: 10px;
+	font-size: 20px;
+}
+
+.content
+{
+	padding: 50px 55px 50px 55px;
+}
+
+.cover
+{
+	 margin: auto 0px auto 0px;
+}
+
+.content > .cover > div
+{
+	background: url("https://i.ytimg.com/vi/AthxVwKATTY/maxresdefault.jpg") no-repeat;
+	background-color: #fff;
+	background-size: cover;
+	margin: 10px 0px 10px 0px;
+	border-radius: 5px;
+	height: 400px;
+}
+
+.content > .cover > div > div
+{
+
+}
+
+.content > .cover > div > div > div:first-child, .content > .cover > div > div > div > a
+{
+	float: left;
+	position: absolute;
+	color: #fff;
+	z-index: 1;
+}
+
+.gradient-left{
+	width: 100%;
+	height: 400px;
+	display: block;
+	position: absolute;
+	float: left;
+	margin-left: -16px;
+	background: linear-gradient(to left, rgba(255,0,0,0), rgba(0,0,0,0.5));
+	border-radius: 5px;
+	z-index: 0;
+}
+
+.content > .cover > div > div > div
+{
+	padding-top: 30px;
+}
+
+.content > .cover > div > div > div > h1
+{
+	font-weight: normal;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.content > .cover > div > div > div > ul > li
+{
+	padding-bottom: 5px;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.content > .cover > div > div > div > p
+{
+	line-height: 18px;
+	font-size: 13px;
+}
+
+.play-video
+{
+	height: 40px;
+	width: 40px;
+	border: 2px solid white;
+	border-radius: 20px;
+	padding-left: 9px;
+	padding-top: 7px;
+	font-size: 20px;
+	margin-top: 30px;
+}
+
+.content > .cover > div > div > div > ul > li > span:nth-child(1)
+{
+	font-weight: bold;
+}
+
+.content > .cover > div > div > div > p
+{
+
+}
+
+.content > .video-grid > div > div
+{
+	background-color: #000;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	display: block;
+	background-position: center;
+	background-size: cover;
+}
